@@ -70,7 +70,7 @@ public class BookController {
     }
 
     @DeleteMapping("/{bookId}")
-    public ResponseEntity<Book> delete(@PathVariable("booktId") String id) {
+    public ResponseEntity<Book> delete(@PathVariable("bookId") String id) {
         bookService.delete(id);
         return ResponseEntity.noContent().build();
     }
